@@ -37,8 +37,7 @@ def replace_atoms_with_interpretations(prop, atomi, truth_values):
             if prop[i] in atomi and prop[i] == key and atomi[prop[i]] == "null":
                     print(prop[i], '=', truth_values[j])
                     prop[i] = truth_values[j]
-                    j += 1
-                    break
+        j += 1
 
     return prop
 
@@ -100,9 +99,6 @@ lst = convert_into_n_bits(lst, num_atomi)
 
 # print(lst)
 
-# ~ / = P Q S E
-# (((P=Q)/S)~E)
-
 # print(prop) # - debug
 
 copy = prop[:]
@@ -118,18 +114,18 @@ for i in range(len(lst)):
     for i in range(len(prop)-1, -1, -1):
         # Warning approach
         if prop[i] == '!':
-            prop[i+1] = int(not(prop[i+1]))
-            rez = prop[i+1]
+            prop[i + 1] = int(not (prop[i + 1]))
+            rez = prop[i + 1]
             for j in range(i, len(prop)):
                 if prop[i] != 0 or prop[i] != 1:
                     prop[i] = '*'
             # print(prop)# - debug
 
 
-        elif prop[i] in ['⇒','∨','⇔','∧']:
+        elif prop[i] in ['⇒', '∨', '⇔', '∧']:
             if prop[i] == '∧':
                 a, b = '*', '*'
-                for j in range(i+1, len(prop)):
+                for j in range(i + 1, len(prop)):
                     if prop[j] == 1 or prop[j] == 0:
                         if a == '*':
                             a = prop[j]
@@ -147,7 +143,7 @@ for i in range(len(lst)):
 
             elif prop[i] == '⇔':
                 a, b = '*', '*'
-                for j in range(i+1, len(prop)):
+                for j in range(i + 1, len(prop)):
                     if prop[j] == 0 or prop[j] == 1:
                         if a == '*':
                             a = prop[j]
@@ -166,7 +162,7 @@ for i in range(len(lst)):
 
             elif prop[i] == '⇒':
                 a, b = '*', '*'
-                for j in range(i+1, len(prop)):
+                for j in range(i + 1, len(prop)):
                     if prop[j] == 1 or prop[j] == 0:
                         if a == '*':
                             a = prop[j]
@@ -177,14 +173,13 @@ for i in range(len(lst)):
                             prop[j] = '*'
                             break
                 # print(a,b)# - debug
-                prop[i] = int(not(a) or b)
+                prop[i] = int(not (a) or b)
                 rez = prop[i]
                 # print(prop)# - debug
 
-
             if prop[i] == '∨':
                 a, b = '*', '*'
-                for j in range(i+1, len(prop)):
+                for j in range(i + 1, len(prop)):
                     if prop[j] == 1 or prop[j] == 0:
                         if a == '*':
                             a = prop[j]
@@ -199,7 +194,7 @@ for i in range(len(lst)):
                 rez = prop[i]
                 # print(prop)# - debug
 
-    print("Valoarea propozitiei", p, "sub intepretarea I₀:", truth_values, "este", rez, '(','True' if rez == 1 else 'False', ')')
+    print("Valoarea propozitiei", p, "sub intepretarea I:", truth_values, "este", rez, '(','True' if rez == 1 else 'False', ')')
 
     prop = copy[:]
 
@@ -207,4 +202,3 @@ for i in range(len(lst)):
 # # print(prop)# - debug
 print()
 print("-"*160)
-
