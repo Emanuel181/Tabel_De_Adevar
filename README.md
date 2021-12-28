@@ -1,5 +1,5 @@
 #### Acest program ia ca argument sintaxa abstracta sub forma de lista a unei propozitii, ce este returnata de programul
-#### [ https://github.com/Emanuel181/Tema_LC_Transformare_In_Sintaxa_Abstracta ] si propozitia pentru care se calculeaza valoarea de adevar, 
+#### [ https://github.com/Emanuel181/Tema_LC_Transformare_In_Sintaxa_Abstracta ] si propozitia pentru care se genereaza tabelul de adevar, 
 #### Aceasta lista se gaseste in program in zona de output in stanga mesajului "Lista de ordine: "
 
 ![5](https://user-images.githubusercontent.com/92999481/146649965-96d34a61-4a97-4e06-89f9-7c43cd5cbc71.png)
