@@ -1,4 +1,5 @@
 print("-"*160)
+s = []
 
 def convert_str_to_lst(p):
     return [char for char in p if char != ' ']
@@ -35,8 +36,10 @@ def replace_atoms_with_interpretations(prop, atomi, truth_values):
     for key in ordered:
         for i in range(len(prop)):
             if prop[i] in atomi and prop[i] == key and atomi[prop[i]] == "null":
-                    print(prop[i], '=', truth_values[j])
-                    prop[i] = truth_values[j]
+                s.append([prop[i], '=', truth_values[j]])
+                # print(prop[i], '=', truth_values[j])
+                prop[i] = truth_values[j]
+
         j += 1
 
     return prop
@@ -102,6 +105,7 @@ lst = convert_into_n_bits(lst, num_atomi)
 # print(prop) # - debug
 
 copy = prop[:]
+print()
 
 
 for i in range(len(lst)):
@@ -194,9 +198,18 @@ for i in range(len(lst)):
                 rez = prop[i]
                 # print(prop)# - debug
 
+    a = s[0]
+    print(a)
+    for i in range(1, len(s)):
+        if s[i] != a:
+            print(s[i])
+            a = s[i]
+    s.clear()
+
     print("Valoarea propozitiei", p, "sub intepretarea I:", truth_values, "este", rez, '(','True' if rez == 1 else 'False', ')')
 
     prop = copy[:]
+    print()
 
 
 # # print(prop)# - debug
