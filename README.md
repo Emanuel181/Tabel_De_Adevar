@@ -1,40 +1,29 @@
-#### Acest program ia ca argument sintaxa abstracta sub forma de lista a unei propozitii, ce este returnata de programul
-#### [ https://github.com/Emanuel181/Tema_LC_Transformare_In_Sintaxa_Abstracta ] si propozitia pentru care se genereaza tabelul de adevar, 
-#### Aceasta lista se gaseste in program in zona de output in stanga mesajului "Lista de ordine: "
+# Truth-Table-Generator <img height="52" width="52" src = "https://cdn-icons-png.flaticon.com/512/2535/2535554.png">
+
+
+```A truth table is a table or chart used to illustrate and determine the truth value of propositions and the validity of their resulting argument```.
+
+<hr>
+<br>
+<br>
+
+## How to run it <img height="52" width="52" src = "https://user-images.githubusercontent.com/92999481/166147080-e3baac9b-3d24-439d-aa7b-4eec7a59edc2.png">
+
+**```[1]```**
+The program will be downloaded first by clicking on the green "Code" button and selecting "Downlad as ZIP" or you can copy the source code directly from the ** main.py ** file to an IDE (such as ** PyCharm **) or text editor (such as ** Visual Studio Code **; in this case, you will need to install extensions that allow Python code to run).
+
+**```[2]```** 
+This program takes as its argument the abstract syntax in the form of a list of a sentence, which is returned by the program.
+[https://github.com/Emanuel181/Tema_LC_Transformare_In_Sintaxa_Abstracta] and the sentence for which the truth table is generated,
+This list is found in the program mentioned above in the output area to the left of the message "Order list:".
 
 ![5](https://user-images.githubusercontent.com/92999481/146649965-96d34a61-4a97-4e06-89f9-7c43cd5cbc71.png)
 
 ![6](https://user-images.githubusercontent.com/92999481/146649968-8b29b9a2-96e6-49ed-9002-f4fca7978126.png)
 
-#### Ultima actualizare: 17.12.2021
-
-
-#### [ REPOZITORIU ]
-
-  Github
-
-#### [ CUM SE RULEAZA CODUL ]
-
-Programul se va descarca inainte apasand pe butonul verde "Code" si selectand "Downlad as ZIP" sau se poate copia direct codul sursa, din fisierul **main.py** intr-un IDE(cum ar fi **PyCharm**) sau editor de text(cum ar fi **Visual Studio Code**; in cazul acesta, va fi nevoie instalarea de extensii ce permit rularea de cod Python).
-
-#### Cerinte ale input-ului
-
-In analiza propozitiei, input-ul trebuie sa fie **acelasi** ca cel pe care il returneaza programul  [ https://github.com/Emanuel181/Tema_LC_Transformare_In_Sintaxa_Abstracta ], acest lucru poate fi asigurat prin simpla copiere si lipire (copy paste). 
-
-#### [ EXEMPLE ]
+#### [ EXAMPLES ]
       
 ![12](https://user-images.githubusercontent.com/92999481/146650288-21442236-7438-455f-9480-5225a8344ec8.png)
 
 ![13](https://user-images.githubusercontent.com/92999481/146650289-42ddaddc-6e36-43a8-980c-f323f1e85d03.png)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-[ Rusu Emanuel ]
-
-Grupa 1, subgrupa 2
-
-Facultatea de Matematica - Informatica, anul I
-
-Prof: Adrian Craciun
-
-Prof. seminar: Alexandra Fortis
